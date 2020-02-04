@@ -1,0 +1,46 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:src="@drawable/fflogo"
+    android:layout_width="50dp"
+    android:layout_height="50dp"/>
+
+<TextView
+    android:layout_weight="1"
+    android:textStyle="bold"
+    android:layout_margin="10dp"
+    android:textColor="#333"
+    android:textSize="20dp"
+    android:gravity="left"
+    android:text="  Rider's Login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<ImageView
+    android:src="@drawable/logout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>
